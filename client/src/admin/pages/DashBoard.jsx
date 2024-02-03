@@ -61,7 +61,7 @@ const addCourse = (newCourse) => {
 
   return (
     <div className='courses'>     
-      <button onClick={handleLogOut}>Sign out</button>
+      {/* <button onClick={handleLogOut}>Sign out</button> */}
       <CreateCourse onCourseCreated={addCourse}/>
       {/* {console.log(courses)} */}
       <CourseItems courses={courses}/>

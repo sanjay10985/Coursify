@@ -54,7 +54,11 @@ const Auth = () => {
       navigate(location.state?.from || "/")
 
     })
-    .catch((err) => console.log(err));
+    .catch((err) => 
+    {
+      alert("The provided account details are not authorized!")
+       console.log(err);
+    });
   }
   
   }

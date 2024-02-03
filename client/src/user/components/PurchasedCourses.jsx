@@ -21,9 +21,10 @@ const PurchasedCourses = () => {
     }, []);
 
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font h-[70vh]">
       
-  <div className="container px-5 py-24 mx-auto">
+ {courses?.length > 0 ? 
+ (<div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -m-4">
       {courses && (
         courses.map((course) => (
@@ -59,7 +60,15 @@ const PurchasedCourses = () => {
         ))
       )}
     </div>
-  </div>
+  </div>): (
+    <h1 className='text-center'>
+      You have not purchased any courses! but hey it's never too late! 
+      {/* <a href='/#courses'>
+         click here.
+        </a> */}
+    </h1>
+  )
+  }
 </section>
   )
 }
