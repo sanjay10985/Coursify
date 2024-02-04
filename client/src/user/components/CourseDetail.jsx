@@ -66,9 +66,9 @@ const CourseDetail = () => {
             src={course.imageLink}
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <h2 className="text-sm title-font text-gray-500 tracking-widest">
+            {/* <h2 className="text-sm title-font text-gray-500 tracking-widest">
               BRAND NAME
-            </h2>
+            </h2> */}
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
               {course.title}
             </h1>
@@ -173,9 +173,9 @@ const CourseDetail = () => {
             <p className="leading-relaxed">{course.description}</p>
 
             <div className="flex">
-              <span className="title-font font-medium text-2xl text-gray-900">
+              {/* <span className="title-font font-medium text-2xl text-gray-900">
                 {course.price}
-              </span>
+              </span> */}
               <button
                 className="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded"
                 onClick={handleCourseBuy}

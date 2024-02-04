@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Home from './user/pages/Home';
 // import Courses from './user/pages/Courses'
@@ -12,11 +12,9 @@ import DashBoard from './admin/pages/DashBoard';
 
 const App = () => {
 
-
-
-
   return (
     <div>
+
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>

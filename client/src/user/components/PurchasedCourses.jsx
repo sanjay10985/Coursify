@@ -21,7 +21,7 @@ const PurchasedCourses = () => {
     }, []);
 
   return (
-    <section className="text-gray-600 body-font h-[70vh]">
+    <section className="text-gray-600 body-font ">
       
  {courses?.length > 0 ? 
  (<div className="container px-5 py-24 mx-auto">
